@@ -1,0 +1,563 @@
+/* RESET - Remove default styles from browser
+=================================================================================== */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/*Set Box Sizing "border-box" by default*/
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/*FORMATTING MAIN TAGS--------------------------
+REFERENCE SIZE FOR POLICE----------------------
+ We can use html or: root==================================*/
+ * {
+	font-size: 100.01%; }
+	
+ html {
+	font-size: 62.5%;
+	height: 100%;
+	scroll-behavior: smooth;
+	box-sizing: border-box; }
+
+/* FONT - PROPERTISE DEFULT
+----------------------------------------------*/
+body {
+	margin: 0;
+	height: 100%;
+	font: 1.3rem/1.6153 "Dosis", sans-serif; }
+
+	h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+		color: #ffce1b; }
+		
+p {
+	font-family: "Source Sans Pro", sans-serif; }
+p {
+  margin: 0 0 12px;
+}
+
+#wrapper {
+	width: 100%;
+	height: 100%;
+	display: table;
+	overflow: hidden;
+	table-layout: fixed; }
+
+
+/*HEADER CONTENT - THIS SETS THE ALL CONTIENT INSIDE THE HERAER IN TO AN ORDER
+----------------------------------------------*/
+#header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+	padding: 31px 0 32px;
+	background: transparent;
+
+	/* -webkit-backface-visibility: hidden; */
+	/* Prevent Chrome bug because of on-scroll effect in other section */ }
+
+
+/*LOGO - Moving to fav position/ & positioning the texts
+----------------------------------------------*/
+.logo {
+  float: left;
+  margin: 0 0 0 30px;
+  width: 151px;
+  height: 41px;
+}
+#logo-text {
+	color: #fff;
+	float: left;
+	margin: 0 0 0 40px;
+	font-size: 2rem;
+}
+/*GENERAL PROPERTISE OF BUTTONs
+----------------------------------------------*/
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 152px;
+  font-size: 766px;
+  line-height: 1.5;
+	border-radius: 4px; }
+	
+
+.btn-primary {
+	color: #000000;
+	background-color: #ffce1b;
+	border-color: #ffce1b; }
+
+.rounded {
+	border-radius: 40px; }
+
+/*BUTTON ON TOP RIGHT 
+----------------------------------------------*/
+#header .btn {
+	float: right;
+	margin: 2px 30px 0 49px;
+	height: 38px;
+	min-width: 135px;
+	padding: 7px;
+	font-weight: bold;
+	font-size: 1.6rem;
+	line-height: 22px;
+	letter-spacing: 0; }
+/*GENERAL PROPERTISE OF BUTTONS- SETTING THE COLORS, BG AND BORDERS ---------------------------------------------*/
+
+#nav {
+	overflow: hidden;
+	text-align: right;
+	font-size: 0;
+	letter-spacing: -4px;
+	white-space: nowrap; }
+
+	
+#nav ul {
+	padding: 9px 0 5px;
+	margin: 0; }
+
+#nav li {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 1.6rem;
+	line-height: 24px;
+	font-weight: bold;
+	letter-spacing: 0;
+	white-space: normal;
+	margin: 0 0 0 34px; }
+
+#nav li a {
+	display: block;
+	color: #fff;
+	text-decoration: none; }
+	#nav li a:hover{
+		color: #f9e084;
+	}
+	/* FIRST SECTION 
+----------------------------------------------*/
+.visual {
+	min-height: 800px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	color: goldenrod;
+	font-size: 0;
+	letter-spacing: -4px;
+	padding: 104px 0 0;
+	background: transparent; }
+
+		/* BACKGROUND IMAGE PROPERTIES 
+----------------------------------------------*/
+.visual > .container {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	z-index: 1;
+	font-size: 2.4rem;
+	line-height: 1.5;
+	letter-spacing: 0;
+}
+
+.visual .bg-stretch {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	*-webkit-transform: translateX(-50%);
+    *-ms-transform: translateX(-50%);
+		transform: translateX(-50%); }
+		
+	/* to make the properties of contatiner  
+----------------------------------------------*/
+
+.visual h1 {
+	margin: 0 0 10px;
+	font-size: 8.2rem;
+	line-height: 1.12;
+	color: #fff; }
+/* second line in header */
+	.visual p {
+		margin: 0 0 8px; }
+		.visual p.tagline {
+			line-height: 1.1;
+			font-size: 2.6rem; }
+/* third line in header */
+	.visual .info {
+		display: block;
+		font-size: 1.6rem;
+		line-height: 1.5rem;
+		color: #f9e084;
+		text-transform: uppercase; }
+/* this brings all the 3 text of heard in the center  */
+	.visual .text-block {
+		padding: 220px 0;	}
+
+
+		
+
+	/* SECOUND SECTION  
+----------------------------------------------*/
+	#cta {
+		position: relative;
+		z-index: 1;
+		margin: -80px 0 55px;
+		text-align: center;
+		color: #848e97;
+		font-size: 1.4rem;
+		line-height: 1.28571428; }
+
+	#cta .btn {
+		margin: 0 0 16px;
+		height: 62px;
+		font-size: 2.1rem;
+		line-height: 26px;
+		font-weight: bold;
+		padding: 17px;
+		min-width: 280px;	}
+
+	#cta p {
+		margin: 0 0 18px;	}
+
+
+	/* SECTION 2 CONTINUE */
+	.text-box {
+		text-align: center;
+		font-size: 2.1rem;
+		line-height: 1.524;
+		color: #333333;
+		padding-bottom: 23px; }
+		.text-box h2{
+			margin: 0 0 20px;
+			font-size: 5.4rem;
+			line-height: 1.148;
+			text-transform: uppercase;
+			font-weight: bold;	}
+		.text-box p { 
+			margin: 0 0 35px;	}
+
+	/* Main SECTION */
+	.main {
+		padding: 47px;
+	}
+	.main p {
+		margin: 0 0 23px;
+	}
+	section {
+		display: block;
+		background: #fff;
+	}
+	.area {
+    background: #f4f4f4;
+    border-bottom: 10px solid #f7e296;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.visual-list {
+    list-style: none;
+		color: #848e97;
+		width: 50%;
+		padding: 40px 40px 40px 0px;
+}
+
+.visual-list li {
+	display: flex;
+}
+
+.visual-list .img-holder {
+	text-align: center;
+}
+
+
+
+.visual-list .img-holder img {
+	margin: 20px;
+	max-height: 100px;
+	max-width: 70px;
+}
+
+
+.visual-list .text-holder h3 {
+	padding-top: 24px;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+div {
+	display: block; }
+
+#img-slide {
+		width: 50%;	
+		background-size: cover;
+		background-position: center center;
+		background-image: url('..//img/ball-sider.jpg')
+}
+
+.visual-list .text-holder {
+    overflow: hidden;
+}
+
+.visual-container {
+  background: #fff;
+  text-align: center; }
+  .visual-container .visual-area {
+    position: relative;
+    overflow: hidden;
+    padding: 90px 0 70px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #fff; }
+    .visual-container .visual-area > .container {
+      position: relative;
+      z-index: 1; }
+      .visual-container .visual-area > .container > p {
+        margin: 0 120px 5px; }
+    .visual-container .visual-area .bg-stretch {
+      position: absolute;
+      top: 0;
+      left: 0; }
+  .visual-container .visual-area + .visual-area {
+    padding: 70px 0; }
+   
+  .visual-container h2 {
+    margin: 0 0 70px;
+    font-size: 4.8rem;
+    line-height: 1.166666;
+    font-weight: bold;
+    }
+  .visual-container p.silent {
+    color: #746074; }
+
+.testimonials {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			color: #333333;
+			margin-bottom: -46px;
+			overflow: hidden;
+			font-size: 0;
+			letter-spacing: -4px; }
+	.testimonials li {
+		display: inline-block;
+		vertical-align: top;
+		font-size: 1.6rem;
+		line-height: 1.5;
+		width: 50%;
+		letter-spacing: 0; }
+	.testimonials .img-holder img {
+		display: inline-block;
+		vertical-align: middle; }
+	
+	.testimonials p {
+		margin: 0 30px 70px; }
+
+.Pricing-tables {
+	padding: 0 7px 25px;
+	font-size: 0;
+	letter-spacing: -4px;
+	white-space: nowrap;}
+	.Pricing-tables h3 {
+		font-size: 2.1rem;
+		line-height: 1.5;
+		text-transform: uppercase;
+		color: #333333;}
+.plan {
+	display: inline-block;
+	vertical-align: top;
+	width: 24%;
+	background: #f4f4f4;
+	border-radius:0;
+	min-height: 100px;
+	margin: 50px 3px;
+	padding: 0 0 35px;
+	letter-spacing: 0;
+	white-space: normal;
+	text-align: center;
+	color:#fff;}
+	.plan .head {
+		background: rgb(255, 255, 255, 0.05);
+		padding: 8px 0 13px;
+		margin-bottom: 30px;}
+.plan.recommended .head {
+	padding: 12px 0 20px;
+	background: rgba(0, 0, 0, 0.1);}
+
+.plan .price {
+	display: block;
+	font-weight: bold;
+	text-transform: uppercase;}
+
+.price .price-main {
+	display: block;
+	padding: 0 0 17px;
+	font-size: 6.4rem;
+	vertical-align: top;
+	line-height: 1;
+	white-space: nowrap;
+	color: #000000;}
+	.recommended .price .price-main {
+		font-size: 8.2rem;}
+
+.price .price-main .symbol {
+	display: inline-block;
+	color: #000000;
+	vertical-align: top;
+	margin: 0 7px 0 0;
+	position: relative;
+	font-weight: normal;}
+
+.price .price-additional {
+  color: #c2c2c2;
+  display: block;
+  padding: 0 0 33px;
+  font-weight: normal;
+  font-size: 1.4rem; }
+  .recommended .price .price-additional {
+	padding: 0 0 43px; }
+	
+.plan .btn {
+  height: 42px;
+  font-size: 1.5rem;
+  border: 0;
+  line-height: 26px;
+  padding: 8px 40px;
+  text-transform: uppercase;
+  color: #333333;
+  font-weight: bold; }
+  .plan .btn.btn-default {
+    background: rgba(247, 226, 150,1); }
+    .plan .btn.btn-default:hover {
+      background: rgba(247, 226, 150,0.8); }
+.plan.recommended ul:before{ background:#ffce1b !important;}
+
+.recommended .btn {
+  padding: 14px 50px;
+  height: 52px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 7px; }
+
+.plan ul {
+  color:#333333;
+  display: block;
+  position: relative;
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  padding: 29px 0 22px;
+  min-height: 117px;
+  list-style: none; }
+
+.plan ul:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 60px;
+  margin: 0 0 0 -30px;
+  height: 5px;
+  background: #f7e296; }
+
+.plan.recommended {
+  margin-top: 0;
+  width: 28%;
+  position: relative;
+  z-index: 99; color:#fff;
+  background: #000000;
+  }
+  .plan.recommended ul {
+    min-height: 176px;
+    line-height: 32px;
+    padding: 37px 0 22px; }
+.plan.recommended h3, .plan.recommended  .price .price-main, .plan.recommended  .price .symbol, .plan.recommended ul li{
+	color:#fff;
+	}
+.plan.recommended .btn-default	{background:#ffce1b;color:#000000;}
+
+/* .plan {
+    display: block;
+    width: auto;
+    margin: 0 auto -5px;
+    max-width: 310px; }
+    .plan.recommended {
+      max-width: 370px;
+	  width: auto; }
+
+.plan {
+    max-width: 260px; }
+    .plan .head {
+      padding: 6px 12px 20px; }
+    .plan.recommended {
+	  max-width: 300px; } */
+	  
+.cta-footer {
+ 	margin-top: 40px !important;
+}
+
+
+
+.subscribe {
+  margin: -30px 17px 0 0;
+  text-align: right;
+  white-space: nowrap; }
+  .subscribe h3 {
+    margin: 0 15px;
+    float: left;
+    font-size: 3rem;
+    line-height: 1.4;
+    font-weight: bold;
+    color:#ffce1b; }
+  .subscribe .form-group {
+    overflow: hidden; }
+  .subscribe .form-control {
+	margin: 0px 10px 0px 0px;
+    padding: 10px 28px;
+    font-size: 1.4rem;
+    height: 42px;
+    min-width: 335px;
+    line-height: 20px;
+    border-color: #fff;
+    font-weight: bold;
+    box-shadow: 0 0 0 #fff; }
+  .subscribe .btn {
+    float: right;
+    height: 42px;
+    font-size: 1.3rem;
+    line-height: 20px;
+    padding: 10px 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+     }
+
+.footer-holder {
+  position: relative;
+  padding: 62px 15px 92px;
+  font-size: 1.4rem;
+  line-height: 1.6428571429;
+  color: #848e97; }
+  
+  
+
+
+
+
+@media only screen and (max-width: 300px) {
+ .btn {
+	 display: block;
+	 background-color: red;
+ }
+}
+
